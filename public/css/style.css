@@ -4,7 +4,25 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-
+/*--------------------------------------------------------------
+# Ajouter
+--------------------------------------------------------------*/
+.modules_stat{
+  display: none;
+}
+.matieres_stat{
+  display: none;
+}
+.filieres_stat{
+  display: none;
+}
+.flex_div{
+  display: flex;
+}
+.flex_div .flex_div_item{
+  margin: 20px 20px;
+  height: 40px;
+}
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/

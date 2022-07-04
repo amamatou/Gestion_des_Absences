@@ -9,6 +9,7 @@ use App\Http\Controllers\NiveauController;
 // use App\Http\Controllers\PersonneController;
 use App\Http\Controllers\EtudiantController;
 use App\Http\Controllers\ProfesseurController;
+use App\Http\Controllers\DashboardController;
 
 
 /*
@@ -27,10 +28,8 @@ Route::get('/', function () {
 });
 
 
-
-Route::get('/home', function () {
-    return view('index');
-})->middleware(['auth'])->name('home');
+//Route::get('/home', [DashboardController::class, 'diagram'])->name("index");
+Route::get('/home', [DashboardController::class, 'diagram'])->middleware(['auth'])->name('home');
 
 
 Route::middleware(['auth','admin'])->group(function(){

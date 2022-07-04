@@ -175,7 +175,7 @@
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
             <li class="dropdown-header">
               <h6>{{auth()->user()->firstname}}</h6>
-              <span>{{--{{getMainRoleName()}}--}}</span>
+              <span>{{getMainRoleName()}}</span>
             </li>
             <li>
               <hr class="dropdown-divider">
