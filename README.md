@@ -7,6 +7,20 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+#Apres avoir effectuer la migration, executer le code suivant dans la base de donnees
+insert into roles(intitule) values('admin');
+insert into roles(intitule) values('enseignant');
+insert into roles(intitule) values('etudiant');
+insert into roles(intitule) values('respFiliere');
+insert into roles(intitule) values('respModule');
+
+insert into role_user(role_id,user_id) values(1,1);
+insert into role_user(role_id,user_id) values(2,2);
+insert into role_user(role_id,user_id) values(3,3);
+insert into role_user(role_id,user_id) values(3,3);
+insert into role_user(role_id,user_id) values(3,3);
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
