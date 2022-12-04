@@ -32,7 +32,7 @@ public function exportIntoExcel(Request $request)
         return Excel::download(new AbsenceExport($request->dateDebut,$request->dateFin,$request->idProf,$request->matiere),"absenceList_".$request->dateDebut."-".$request->dateFin.".xlsx");
     }
 
-    public function exportIntoCSV()
+    public function exportIntoCSV(Request $request)
     {
         return Excel::download(new AbsenceExport($request->dateDebut,$request->dateFin,$request->idProf,$request->matiere),"absenceList_".$request->dateDebut."-".$request->dateFin.".csv");
         //return Excel::download(new AbsenceExport,'absenceList.csv');
